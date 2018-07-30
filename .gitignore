@@ -1,0 +1,12 @@
+#Ignore the vagrant dir
+.vagrant
+#ignore all logfiles
+*.log
+#ignore anisible-demo folder
+ansible-demo
+#ignore .aws folder
+.aws
+#ignore all certs
+*.pub
+id_rsa
+.boto
