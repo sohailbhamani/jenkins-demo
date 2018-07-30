@@ -2,8 +2,8 @@
 .vagrant
 #ignore all logfiles
 *.log
-#ignore anisible-demo folder
-ansible-demo
+#ignore demo folder
+jenkins-course
 #ignore .aws folder
 .aws
 #ignore all certs
