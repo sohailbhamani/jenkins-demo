@@ -3,7 +3,7 @@
 #ignore all logfiles
 *.log
 #ignore demo folder
-jenkins-course
+maven-project
 #ignore .aws folder
 .aws
 #ignore all certs
