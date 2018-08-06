@@ -8,4 +8,12 @@ Vagrant.configure(2) do |config|
       v.cpus = 2
     end
    end
+   config.vm.define "webserver" do |webserver|
+    webserver.vm.box = "ubuntu/trusty64"
+    webserver.vm.network "private_network", ip: "192.168.0.3"
+    webserver.vm.hostname = "webserver"
+    webserver.vm.provision :shell, path: "webserver-bootstrap.sh"
+    webserver.vm.provision "shell",
+    	inline: "export JAVA_HOME=`update-alternatives --config java | awk -F: '{print $2}' | tr -ds ' ' '\n'`"
+  end
 end
