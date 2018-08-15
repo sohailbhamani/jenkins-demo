@@ -8,3 +8,4 @@
 *.pub
 id_rsa
 .boto
+*.pem

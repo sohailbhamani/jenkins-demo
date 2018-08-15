@@ -30,7 +30,7 @@ rm ./apache-tomcat-$TOMCAT_VERSION.tar.gz
 #set needed permissions
 cd /opt/tomcat
 chgrp -R tomcat conf
-chmod g+rwx conf
+chmod g+rwx conf work temp logs webapps
 chmod g+r conf/*
 chown -R tomcat work/ temp/ logs/ webapps/
 
